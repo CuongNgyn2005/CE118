@@ -1,0 +1,625 @@
+Simulator report for ALU
+Wed Apr 02 21:12:40 2025
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 20.0 us      ;
+; Simulation Netlist Size     ; 216 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                  ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                             ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                   ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                    ;               ;
+; Vector input source                                                                        ; E:/THIET KE LUAN LI SO/THUC HANH/LAB3/Waveform_ALU.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                     ; On            ;
+; Check outputs                                                                              ; Off                                                    ; Off           ;
+; Report simulation coverage                                                                 ; On                                                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                    ; Off           ;
+; Detect glitches                                                                            ; Off                                                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                    ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                   ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 216          ;
+; Total output ports checked                          ; 216          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 216          ;
+; Total output ports with no 1-value coverage         ; 216          ;
+; Total output ports with no 0-value coverage         ; 216          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |ALU|LEDR0                                                      ; |ALU|LEDR0                                                      ; pin_out          ;
+; |ALU|SW13                                                       ; |ALU|SW13                                                       ; out              ;
+; |ALU|SW0                                                        ; |ALU|SW0                                                        ; out              ;
+; |ALU|SW1                                                        ; |ALU|SW1                                                        ; out              ;
+; |ALU|SW2                                                        ; |ALU|SW2                                                        ; out              ;
+; |ALU|SW3                                                        ; |ALU|SW3                                                        ; out              ;
+; |ALU|SW4                                                        ; |ALU|SW4                                                        ; out              ;
+; |ALU|SW5                                                        ; |ALU|SW5                                                        ; out              ;
+; |ALU|SW6                                                        ; |ALU|SW6                                                        ; out              ;
+; |ALU|SW7                                                        ; |ALU|SW7                                                        ; out              ;
+; |ALU|SW8                                                        ; |ALU|SW8                                                        ; out              ;
+; |ALU|SW9                                                        ; |ALU|SW9                                                        ; out              ;
+; |ALU|SW12                                                       ; |ALU|SW12                                                       ; out              ;
+; |ALU|SW11                                                       ; |ALU|SW11                                                       ; out              ;
+; |ALU|LEDR1                                                      ; |ALU|LEDR1                                                      ; pin_out          ;
+; |ALU|LEDR2                                                      ; |ALU|LEDR2                                                      ; pin_out          ;
+; |ALU|LEDR3                                                      ; |ALU|LEDR3                                                      ; pin_out          ;
+; |ALU|LEDR4                                                      ; |ALU|LEDR4                                                      ; pin_out          ;
+; |ALU|LEDR6                                                      ; |ALU|LEDR6                                                      ; pin_out          ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst                               ; |ALU|LU:inst1|XOR_4BIT:inst2|inst                               ; out0             ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst1                              ; |ALU|LU:inst1|XOR_4BIT:inst2|inst1                              ; out0             ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst2                              ; |ALU|LU:inst1|XOR_4BIT:inst2|inst2                              ; out0             ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst3                              ; |ALU|LU:inst1|XOR_4BIT:inst2|inst3                              ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst                               ; |ALU|LU:inst1|NAND_4BIT:inst|inst                               ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst1                              ; |ALU|LU:inst1|NAND_4BIT:inst|inst1                              ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst2                              ; |ALU|LU:inst1|NAND_4BIT:inst|inst2                              ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst3                              ; |ALU|LU:inst1|NAND_4BIT:inst|inst3                              ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst                                ; |ALU|LU:inst1|OR_4BIT:inst1|inst                                ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst2                               ; |ALU|LU:inst1|OR_4BIT:inst1|inst2                               ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst3                               ; |ALU|LU:inst1|OR_4BIT:inst1|inst3                               ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst4                               ; |ALU|LU:inst1|OR_4BIT:inst1|inst4                               ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst                               ; |ALU|LU:inst1|AND_4BIT:inst3|inst                               ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst1                              ; |ALU|LU:inst1|AND_4BIT:inst3|inst1                              ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst2                              ; |ALU|LU:inst1|AND_4BIT:inst3|inst2                              ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst3                              ; |ALU|LU:inst1|AND_4BIT:inst3|inst3                              ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst2   ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst2   ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst1   ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst1   ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|instX   ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|instX   ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|instX  ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|inst10                              ; |ALU|AU:inst|SUB_4BIT:inst3|inst10                              ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst                        ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst                        ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst4                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst4                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst2                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst2                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|inst10                              ; |ALU|AU:inst|SUB_4BIT:inst2|inst10                              ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst1                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst3                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst3                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst1                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst3                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst3                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst1                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst                        ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst                        ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst5                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst5                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst4                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst4                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst2                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst2                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst3                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst3                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst1                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst1                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst3                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst3                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst1                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|inst16                               ; |ALU|AU:inst|FA_4BIT:inst4|inst16                               ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst                        ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst2                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst                        ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst2                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst2                      ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst2                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst                        ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst2                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|inst16                               ; |ALU|AU:inst|FA_4BIT:inst1|inst16                               ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst1                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst                        ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst4                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst4                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst2                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst3                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst3                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst1                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst                        ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst4                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst4                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst2                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst3                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst3                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst1                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst5                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst5                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst4                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst4                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst2                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst2                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst3                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst3                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst1                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst1                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst                        ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst4                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst4                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst2                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst3                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst3                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst1                       ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst2     ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst2     ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst1     ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst1     ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|instX     ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|instX     ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|instX    ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:instK|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:instK|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2                        ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2                        ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1                        ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1                        ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|instX                        ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|instX                        ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; Node Name                                                       ; Output Port Name                                                ; Output Port Type ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+; |ALU|LEDR0                                                      ; |ALU|LEDR0                                                      ; pin_out          ;
+; |ALU|SW13                                                       ; |ALU|SW13                                                       ; out              ;
+; |ALU|SW0                                                        ; |ALU|SW0                                                        ; out              ;
+; |ALU|SW1                                                        ; |ALU|SW1                                                        ; out              ;
+; |ALU|SW2                                                        ; |ALU|SW2                                                        ; out              ;
+; |ALU|SW3                                                        ; |ALU|SW3                                                        ; out              ;
+; |ALU|SW4                                                        ; |ALU|SW4                                                        ; out              ;
+; |ALU|SW5                                                        ; |ALU|SW5                                                        ; out              ;
+; |ALU|SW6                                                        ; |ALU|SW6                                                        ; out              ;
+; |ALU|SW7                                                        ; |ALU|SW7                                                        ; out              ;
+; |ALU|SW8                                                        ; |ALU|SW8                                                        ; out              ;
+; |ALU|SW9                                                        ; |ALU|SW9                                                        ; out              ;
+; |ALU|SW12                                                       ; |ALU|SW12                                                       ; out              ;
+; |ALU|SW11                                                       ; |ALU|SW11                                                       ; out              ;
+; |ALU|LEDR1                                                      ; |ALU|LEDR1                                                      ; pin_out          ;
+; |ALU|LEDR2                                                      ; |ALU|LEDR2                                                      ; pin_out          ;
+; |ALU|LEDR3                                                      ; |ALU|LEDR3                                                      ; pin_out          ;
+; |ALU|LEDR4                                                      ; |ALU|LEDR4                                                      ; pin_out          ;
+; |ALU|LEDR6                                                      ; |ALU|LEDR6                                                      ; pin_out          ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst                               ; |ALU|LU:inst1|XOR_4BIT:inst2|inst                               ; out0             ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst1                              ; |ALU|LU:inst1|XOR_4BIT:inst2|inst1                              ; out0             ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst2                              ; |ALU|LU:inst1|XOR_4BIT:inst2|inst2                              ; out0             ;
+; |ALU|LU:inst1|XOR_4BIT:inst2|inst3                              ; |ALU|LU:inst1|XOR_4BIT:inst2|inst3                              ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst                               ; |ALU|LU:inst1|NAND_4BIT:inst|inst                               ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst1                              ; |ALU|LU:inst1|NAND_4BIT:inst|inst1                              ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst2                              ; |ALU|LU:inst1|NAND_4BIT:inst|inst2                              ; out0             ;
+; |ALU|LU:inst1|NAND_4BIT:inst|inst3                              ; |ALU|LU:inst1|NAND_4BIT:inst|inst3                              ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst                                ; |ALU|LU:inst1|OR_4BIT:inst1|inst                                ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst2                               ; |ALU|LU:inst1|OR_4BIT:inst1|inst2                               ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst3                               ; |ALU|LU:inst1|OR_4BIT:inst1|inst3                               ; out0             ;
+; |ALU|LU:inst1|OR_4BIT:inst1|inst4                               ; |ALU|LU:inst1|OR_4BIT:inst1|inst4                               ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst                               ; |ALU|LU:inst1|AND_4BIT:inst3|inst                               ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst1                              ; |ALU|LU:inst1|AND_4BIT:inst3|inst1                              ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst2                              ; |ALU|LU:inst1|AND_4BIT:inst3|inst2                              ; out0             ;
+; |ALU|LU:inst1|AND_4BIT:inst3|inst3                              ; |ALU|LU:inst1|AND_4BIT:inst3|inst3                              ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst2|MUX2_1:inst|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst5|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst4|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst3|instX  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst2   ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst2   ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst1   ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|inst1   ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|instX   ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst|MUX2_1:inst|instX   ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1 ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1 ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1  ; out0             ;
+; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|instX  ; |ALU|LU:inst1|MUX4_1:inst4|MUX2_1_4BIT:inst3|MUX2_1:inst|instX  ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|inst10                              ; |ALU|AU:inst|SUB_4BIT:inst3|inst10                              ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst2|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst1|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst                        ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst                        ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst4                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst4                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst2                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst|inst2                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst                       ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst3|FA:inst4|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|inst10                              ; |ALU|AU:inst|SUB_4BIT:inst2|inst10                              ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst3|inst1                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst3                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst3                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst2|inst1                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst3                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst3                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst1|inst1                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst                        ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst                        ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst5                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst5                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst4                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst4                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst2                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst2                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst3                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst3                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst1                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst|inst1                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst                       ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst                       ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst5                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst5                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst4                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst4                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst2                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst2                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst3                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst3                      ; out0             ;
+; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst1                      ; |ALU|AU:inst|SUB_4BIT:inst2|FA:inst4|inst1                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|inst16                               ; |ALU|AU:inst|FA_4BIT:inst4|inst16                               ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst                        ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst2                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst6|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst                        ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst2                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst5|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst2                      ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst48|inst2                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst                        ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst2                       ; |ALU|AU:inst|FA_4BIT:inst4|FA:inst8|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|inst16                               ; |ALU|AU:inst|FA_4BIT:inst1|inst16                               ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst7|inst1                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst                        ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst4                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst4                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst2                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst3                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst3                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst6|inst1                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst                        ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst4                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst4                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst2                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst3                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst3                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst5|inst1                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst5                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst5                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst4                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst4                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst2                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst2                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst3                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst3                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst1                      ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst48|inst1                      ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst                        ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst                        ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst5                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst5                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst4                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst4                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst2                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst2                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst3                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst3                       ; out0             ;
+; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst1                       ; |ALU|AU:inst|FA_4BIT:inst1|FA:inst8|inst1                       ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:instK|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst2|MUX2_1:inst|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst1|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:instK|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst5|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst4|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst3|instX    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst2     ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst2     ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst1     ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|inst1     ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|instX     ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst|MUX2_1:inst|instX     ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst1|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:instK|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst5|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst4|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst2   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|inst1   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX   ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst3|instX   ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst2    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|inst1    ; out0             ;
+; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|instX    ; |ALU|AU:inst|MUX4_1:inst|MUX2_1_4BIT:inst3|MUX2_1:inst|instX    ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst1|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:instK|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:instK|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst2                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|inst1                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst5|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst2                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|inst1                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst4|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst2                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|inst1                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX                       ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst3|instX                       ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2                        ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst2                        ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1                        ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|inst1                        ; out0             ;
+; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|instX                        ; |ALU|MUX2_1_4BIT:inst2|MUX2_1:inst|instX                        ; out0             ;
++-----------------------------------------------------------------+-----------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 02 21:12:40 2025
+Info: Command: quartus_sim --simulation_results_format=VWF ALU -c ALU
+Info (324025): Using vector source file "E:/THIET KE LUAN LI SO/THUC HANH/LAB3/Waveform_ALU.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "A[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "B[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "B[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "B[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "B[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "B[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "OVER" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Q[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Q[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Q[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Q[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "Q[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "S[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "S[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "S[0]" in design.
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW13"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW0"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW1"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW2"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW3"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW4"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW5"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW6"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW7"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW8"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW9"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW12"
+Warning (328012): Can't find signal in vector source file for input pin "|ALU|SW11"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       0.00 %
+Info (328052): Number of transitions in simulation is 0
+Info (324045): Vector file ALU.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4446 megabytes
+    Info: Processing ended: Wed Apr 02 21:12:40 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

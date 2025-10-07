@@ -1,0 +1,12 @@
+module SHIFTER(
+    input  [31:0] data_in,        // Dữ liệu đầu vào 5 bit
+    output [31:0] data_out        // Dữ liệu đầu ra 5 bit
+);
+
+    reg [31:0] result;
+
+    always @(*) begin
+            result = data_in <<1; // Dịch trái
+    end
+    assign data_out = result;
+endmodule
